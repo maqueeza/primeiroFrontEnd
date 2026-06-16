@@ -4,43 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PrimeiroSiteMaqueza</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body> <!-- TUDO QUE SE ENXERGA NO SITE -->
     <header> 
-        <h1>Maqueeza</h1>
-        <nav> <!--Secao de navegacao do site-->
-            <ul> <!--Lista nao ordenada paa links do menu-->
-            <li>Sobre mim</li>
-            <li>Projetos</li>
-            <li>Contato</li>
-            </ul>
-        </nav>
+        <h1 class="cabe">Bem-vindo ao meu site</h1>
+
+        <p class="cabe">
+            Esse é meu primeiro projeto de Front-End, ele está em construção e estou fazendo com muito amor ;D
+
+        </p>
+         
+       
     </header>
 
     <section>
 
-        <h2>Sobre mim</h2>
+        <h2 style="color: red;">Quem sou eu?</h2>
 
         <img src="FotoSite1.png" alt="Foto de Pefil" title="Imagem de perfil de Maqueeza">
 
         <article>
 
             <P>
-
-            Oi, eu sou a Maqueza. Estou iniciando na programacao, esse e o meu primeiro teste de site.
+            Meu nome é Dieni e meu apelido é Maqueza. Eu tenho 30 anos, sou casada e tenho dois gatos.
+            <br>
+            <br>
+            Iniciei o estudo na programação em 2025, na verdade eu sempre quis estudar algo na área de tecnologia
+            mas sempre tive muito medo da programação. 
+            <br>
+            <br>
+            Parece bobo né? Mas eu achava a programação a coisa mais IMPOSSÍVEL DA VIDA, agora estou aqui desenvolvendo esse site KKKKKKK piadas da vida..
+            <br>
+            <br>
+            Eu fiz um ano de contabilidade na Faculdade Católica de Santa Catarina, até que gostei
+            mas não era bem o que eu queria fazer o resto da vida.
             </P> 
 
         </article>
 
     <aside>
 
-        <h3>Habilidades</h3>
+        <h3 style="color: red;">Habilidades</h3>
 
         <ul>
+<strong>
 
             <li>Java</li>
+            <li>TypeScript</li>
             <li>HTML</li>
+            <li>CSS</li>
             <li>Stardew Valley</li>
+
+</strong>
+            
 
 
         </ul>
@@ -51,14 +68,18 @@
 
     <section>
 
-            <h2>Projetos</h2>
+            <h2 style="color: red;">Projetos</h2>
 
-            <article>
-                <h3>Portifolio</h3>
+             <article>
 
                 <p>
 
-                 Este e um site em desenvolvimento enquanto estudo front-end.   TESTE DE TEXTO.
+                 Este é o primeiro projeto que estou desenvolvendo enquanto estudo Front-end.
+                 <br>      
+                 <strong>
+                    *Basicamente é para reter melhor o conhecimento (:
+                 </strong>
+                 
 
                 </p>
 
@@ -74,7 +95,9 @@
 
     <section id="habilidades">
 
-        <h2>Habilidades e Tecnologias</h2>
+        <br>
+
+        <h2 style="color: red;">Habilidades e Tecnologias</h2>
 
         <table>
 
@@ -92,7 +115,7 @@
 
                     <td>HTML</td>
                     <td>Iniciante</td>
-                    <td>    Capaz de construir estruturas de páginas semânticas e responsivas</td>
+                    <td class="desc">Capaz de construir estruturas de páginas semânticas e responsivas</td>
 
                 </tbody>
 
@@ -100,7 +123,7 @@
 
                     <td>Java</td>
                     <td>Iniciante</td>
-                    <td>    Capaz de produzir sistemas iniciantes com introdução de dados e cálculos básicos.</td>
+                    <td class="desc">Capaz de produzir sistemas iniciantes com introdução de dados e cálculos básicos.</td>
 
                 </tbody>
 
@@ -108,7 +131,7 @@
 
                     <td>CSS</td>
                     <td>Iniciante</td>
-                    <td>    Iniciando flexbox, frid e animações CSS.</td>
+                    <td class="desc">Iniciando flexbox, frid e animações CSS.</td>
 
                 </tbody>
 
@@ -116,7 +139,15 @@
 
                     <td>JavaScript</td>
                     <td>Iniciante</td>
-                    <td>    Desenvolvimento de scripts do lado do cliente para interações.</td>
+                    <td class="desc">Desenvolvimento de scripts do lado do cliente para interações.</td>
+
+                </tbody>
+
+                <tbody>
+
+                    <td>Stardew Valley</td>
+                    <td>Expert</td>
+                    <td class="desc">Em busca da perfeição!</td>
 
                 </tbody>
 
@@ -127,17 +158,13 @@
 
     </section>
 
-    <footer>
-
-        <p>Direitos reservados a Maqueza</p>
-
-    </footer>
+   
 
     <section>
 
-        <h2>Contato</h2>
+        <h2 style="color: red;">Contato</h2>
 
-            <p>Aprendendo ainda, tem um dica? Entre em contato.</p>
+            <p>Estou aprendendo ainda, você tem um dica? Mande um alô aí.</p>
 
             <address>
                
@@ -163,19 +190,25 @@
                     <br>
 
                     <label for="mensagem">Mensagem: </label>
-                    <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea>
+                    <textarea name="mensagem" id="mensagem" cols="20" rows="5" required placeholder="Mande seu alô aqui"></textarea>
 
                     <br>
 
                     <input type="checkbox" name="inscricao" id="inscricao">
-                    <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
+                    <label for="inscricao">Deseja acompanhar meu desenvolvimento? Se inscreva.</label>
 
                     <br>
 
                     <input type="submit" value="Enviar mensagem">
 
                     
+ <footer>
+    <strong>
+        <p>Direitos reservados a Maqueza</p>
+    </strong>
+        
 
+    </footer>
 
                 </form>
 
