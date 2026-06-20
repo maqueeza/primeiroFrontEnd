@@ -1,27 +1,119 @@
+*{
+    font-family: Arial, sans-serif;
+    color: #111010;
+    padding: 5px;
+    margin: 5px;
+    
+    
+}
+
 .center{
     display: flex;
   justify-content: center;
   align-items: center;
+  color: red
 }
+ 
 
-.par{
-    font-size: 20px;
-    color: #111010;  
-    text-align: center;
-}
 ul{
     list-style-type: disc;
-    padding: 0; 
+    color: #111010;
+    width: fit-content;
+   list-style: none;
+    padding: 0;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
 
 }
 
 th{
     background-color: #f2f2f2;
-    padding: 10px;
     text-align: center;
+    color: #111010;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
 }
 
 td{
+    text-align: center;
+    color: #111010;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
     padding: 10px;
+    border: 1px solid #000;
+    
+}
+
+.paragrafoCentro{
+    text-align: center;
+    color: #111010;
+    
+
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.contato{
+    width: 550px;
+    margin: 40px auto;
+}
+
+.contato h2{
+    color: red;
     text-align: center;
 }
+
+.contato p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.linha{
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.linha label{
+    width: 100px;
+    font-weight: bold;
+}
+
+.linha input,
+.linha select,
+.linha textarea{
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.linha textarea{
+    resize: vertical;
+}
+
+.linha-check{
+    margin: 20px 0;
+}
+
+button{
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #b80000;
+}
+

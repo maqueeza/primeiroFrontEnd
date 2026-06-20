@@ -10,7 +10,7 @@
     <header> 
         <h1 class="center">Bem-vindo ao meu site</h1>
 
-        <p class="par">
+        <p class="paragrafoCentro">
             Esse é meu primeiro projeto de Front-End, ele está em construção e estou fazendo com muito amor ;D
 
         </p>
@@ -26,7 +26,7 @@
 
         <article>
 
-            <P class="par">
+            <P class="paragrafoCentro">
             Meu nome é Dieni e meu apelido é Maqueza. Eu tenho 30 anos, sou casada e tenho dois gatos.
             <br>
             <br>
@@ -45,10 +45,10 @@
 
     <aside>
 
-        <h3 style="color: red;">Habilidades</h3>
+        <h2 class="center" style="color: red;">Habilidades</h2>
 
         <ul>
-<strong>
+
 
             <li>Java</li>
             <li>TypeScript</li>
@@ -56,7 +56,7 @@
             <li>CSS</li>
             <li>Stardew Valley</li>
 
-</strong>
+
             
 
 
@@ -68,16 +68,16 @@
 
     <section>
 
-            <h2 style="color: red;">Projetos</h2>
+            <h2 class="center" >Projetos</h2>
 
              <article>
 
-                <p>
+                <p class="paragrafoCentro">
 
                  Este é o primeiro projeto que estou desenvolvendo enquanto estudo Front-end.
                  <br>      
                  <strong>
-                    *Basicamente é para reter melhor o conhecimento (:
+                    Basicamente é para reter melhor o conhecimento (:
                  </strong>
                  
 
@@ -97,7 +97,7 @@
 
         <br>
 
-        <h2 style="color: red;">Habilidades e Tecnologias</h2>
+        <h2 class="center">Habilidades e Tecnologias</h2>
 
         <table>
 
@@ -160,46 +160,52 @@
 
    
 
-    <section>
+    <section class="contato">
+    <h2>Contato</h2>
 
-        <h2 style="color: red;">Contato</h2>
+    <p>Estou aprendendo ainda. Tem alguma dica? Mande um alô!</p>
 
-            <p>Estou aprendendo ainda, você tem um dica? Mande um alô aí.</p>
+    <form>
 
-            <address>
-               
-                <form action="">
+        <div class="linha">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
 
-                    <label for="Nome">Nome: </label>
-                    <input type="text" id="nome" name="nome" required> <br>
+        <div class="linha">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+        </div>
 
-                    <label for="email">Email: </label>
-                    <input type="text" id="email" name="email" required> <br>
+        <div class="linha">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone">
+        </div>
 
-                    <label for="telefone">Telefone: </label>
-                    <input type="text" id="telefone" nome="telefone"> <br>
+        <div class="linha">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto">
+                <option>Dicas</option>
+                <option>Orçamento</option>
+                <option>Dúvidas</option>
+                <option>Outros</option>
+            </select>
+        </div>
 
-                    <label for="assunto">Assunto: </label>
-                    <select name="assunto" id="assunto">
-                        <option value="dicas">Dicas</option>
-                        <option value="orcamento">Orçamento</option>
-                        <option value="duvidas">Dúvidas</option>
-                        <option value="outros">Outros</option>
-                    </select>
+        <div class="linha">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" rows="5"></textarea>
+        </div>
 
-                    <br>
+        <div class="linha-check">
+            <input type="checkbox" id="inscricao">
+            <label for="inscricao">Desejo acompanhar seu desenvolvimento.</label>
+        </div>
 
-                    <label for="mensagem">Mensagem: </label>
-                    <textarea name="mensagem" id="mensagem" cols="20" rows="5" required placeholder="Mande seu alô aqui"></textarea>
+        <button>Enviar mensagem</button>
 
-                    <br>
-
-                    <input type="checkbox" name="inscricao" id="inscricao">
-                    <label for="inscricao">Deseja acompanhar meu desenvolvimento? Se inscreva.</label>
-
-                    <br>
-
-                    <input type="submit" value="Enviar mensagem">
+    </form>
+</section>
 
                     
  <footer>
